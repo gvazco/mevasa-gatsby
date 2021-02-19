@@ -1,0 +1,14 @@
+@import "../../sass/index.scss";
+
+.menu {
+  text-align: center;
+  > a h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px !important;
+    color: white;
+  }
+  > p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}

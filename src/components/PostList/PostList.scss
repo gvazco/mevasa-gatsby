@@ -1,0 +1,14 @@
+.post-list {
+  margin: 0 !important;
+  justify-content: center;
+
+  &__item {
+    width: 100% !important;
+
+    .extra {
+      i {
+        margin-right: 5px !important;
+      }
+    }
+  }
+}

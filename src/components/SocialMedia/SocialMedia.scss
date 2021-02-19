@@ -1,0 +1,43 @@
+@import "../../sass/index.scss";
+
+.social-media {
+  text-align: center;
+  a {
+    margin: 0 8px;
+    color: white;
+
+    @media (min-width: $breakpoint-up-lg) and(max-width:
+$breakpoint-up-xl) {
+      margin: 0 5px;
+    }
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    .icon {
+      font-size: 20px;
+      opacity: 1 !important;
+
+      &:hover {
+        &.youtube {
+          color: $youtube;
+        }
+        &.twitter {
+          color: $twitter;
+        }
+        &.facebook {
+          color: $facebook;
+        }
+        &.instagram {
+          color: $instagram;
+        }
+        &.linkedin {
+          color: $linkedin;
+        }
+      }
+    }
+  }
+}

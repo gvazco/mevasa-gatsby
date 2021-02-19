@@ -1,0 +1,14 @@
+.pagination {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 10px !important;
+
+  a {
+    color: #000;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}

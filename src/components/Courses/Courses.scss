@@ -1,0 +1,20 @@
+.courses {
+  .button {
+    margin: 5px 2px !important;
+    .content {
+      font-size: 16px;
+    }
+    i {
+      font-size: 18px;
+    }
+  }
+  margin-top: 25px;
+  &__item {
+    img {
+      padding: 5px 0;
+    }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      display: none;
+    }
+  }
+}

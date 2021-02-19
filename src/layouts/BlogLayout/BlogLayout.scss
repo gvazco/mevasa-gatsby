@@ -1,0 +1,25 @@
+@import "../../sass/index.scss";
+
+.blog-layout {
+  > .ui.grid {
+    margin: 0 !important;
+    min-height: 100vh;
+
+    > .column {
+      padding: 40px;
+
+      &:first-of-type {
+        background-color: $background-gray-dark;
+      }
+
+      &:last-of-type {
+        max-height: 100vh;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+}
