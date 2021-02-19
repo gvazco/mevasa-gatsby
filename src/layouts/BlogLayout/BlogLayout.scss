@@ -9,7 +9,8 @@
       padding: 40px;
 
       &:first-of-type {
-        background-color: $background-gray-dark;
+        background-color: $background-gray-light;
+        box-shadow: 4px 4px 6px #999;
       }
 
       &:last-of-type {

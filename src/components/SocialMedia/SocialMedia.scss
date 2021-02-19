@@ -4,7 +4,7 @@
   text-align: center;
   a {
     margin: 0 8px;
-    color: white;
+    color: $font-dark;
 
     @media (min-width: $breakpoint-up-lg) and(max-width:
 $breakpoint-up-xl) {
