@@ -14,7 +14,7 @@ export default function Portafolio(props) {
     <BlogLayout>
       <Seo
         title="Portafolio de Techos y Mantenimientos"
-        description="Lorem Ipsuom dolor sit amet consecutur"
+        description="Muestra de proyectos realizados durante los últimos 10 años."
         image={imageBlog}
       />
       <ProjectList proyectos={proyectos} />
