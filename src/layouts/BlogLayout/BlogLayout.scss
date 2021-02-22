@@ -1,17 +1,46 @@
 @import "../../sass/index.scss";
 
 .blog-layout {
+  @media only screen and (max-width: 767px) {
+    .ui.container {
+      width: auto !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+  }
+  .top_info {
+    @media (max-width: $breakpoint-down-xs) {
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-left: 20px;
+      @media (max-width: $breakpoint-up-sm) {
+        padding-left: 0px;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 0;
+        margin-right: 10px;
+        font-size: 16px;
+      }
+    }
+  }
   > .ui.grid {
     margin: 0 !important;
-    min-height: 100vh;
-
-    > .column {
-      padding: 40px;
-
+    > .row {
+      margin: 0;
       &:first-of-type {
         background-color: $background-gray-light;
-        box-shadow: 4px 4px 6px #999;
+        box-shadow: 7px 7px 16px #d1d1d1, -7px -7px 16px #ffffff;
       }
+    }
+
+    > .column {
+      padding: 20px;
 
       &:last-of-type {
         max-height: 100vh;

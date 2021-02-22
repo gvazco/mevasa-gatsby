@@ -1,7 +1,11 @@
 @import "../../sass/index.scss";
 
 .social-media {
-  text-align: center;
+  text-align: end;
+  margin-right: 13px;
+  @media (max-width: $breakpoint-down-xs) {
+    text-align: center;
+  }
   a {
     margin: 0 8px;
     color: $font-dark;

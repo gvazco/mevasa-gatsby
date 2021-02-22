@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Blog de Gustavo Vázco`,
-    description: `Este es el blog de Gustavo Vázco fotografo, diseñador Ui/Ux y desarollador full-stack`,
-    author: `@gvazcocronista`,
+    title: `Techos y Mantenimientos | Mevasa Comercializadora`,
+    description: `Este es el blog Techos y Mantenimientos | Mevasa Comercializadora`,
+    author: `@mevasacomercializadora`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,9 +19,9 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: `https://blog-strapi-mevasa.herokuapp.com`,
         queryLimit: 1000,
-        contentTypes: [`post`],
+        contentTypes: [`producto`, `post`, `proyecto`],
       },
     },
 

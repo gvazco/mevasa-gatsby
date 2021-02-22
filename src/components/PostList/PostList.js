@@ -22,6 +22,10 @@ export default function PostList(props) {
               </Card.Content>
               <Card.Content extra>
                 <Card.Meta>
+                  <Icon name="file text" />
+                  {post.seo_description}
+                </Card.Meta>
+                <Card.Meta>
                   <Icon name="calendar alternate outline" />
                   {moment(post.createdAt).format("LL")}
                 </Card.Meta>

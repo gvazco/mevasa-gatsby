@@ -1,25 +1,25 @@
 import React from "react"
 import BlogLayout from "../../layouts/BlogLayout"
 import TransformOembedToIframe from "../../utils/TransformOembedToIframe"
-import "./post.scss"
+import "./proyecto.scss"
 import Seo from "../../components/seo"
 
-export default function post(props) {
+export default function Proyecto(props) {
   const { pageContext } = props
-  const { data: post } = pageContext
+  const { data: proyecto } = pageContext
 
   return (
-    <BlogLayout className="post">
+    <BlogLayout className="proyecto">
       <Seo
-        title={post.seo_title}
-        description={post.seo_description}
-        image={post.miniature.publicURL}
+        title={proyecto.seo_title}
+        description={proyecto.seo_description}
+        image={proyecto.image.publicURL}
       />
-      <h1>{post.title}</h1>
+      <h1>{proyecto.title}</h1>
       <div className="markdown-body">
         <div
           dangerouslySetInnerHTML={{
-            __html: TransformOembedToIframe(post.content),
+            __html: TransformOembedToIframe(proyecto.content),
           }}
         />
       </div>

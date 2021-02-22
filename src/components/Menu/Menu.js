@@ -1,19 +1,54 @@
 import React from "react"
 import { Link } from "gatsby"
-// import { Image, Button, Icon } from "semantic-ui-react"
-import SocialMedia from "../SocialMedia"
-import Courses from "../Courses"
+import { Image } from "semantic-ui-react"
+import { Navbar, Nav } from "react-bootstrap"
+// import SocialMedia from "../SocialMedia"
+// import Courses from "../Courses"
 import "./Menu.scss"
+import logo from "../../images/MevasaTechosLogo.png"
 
 export default function Menu() {
   return (
     <div className="menu">
-      <Link to="/">
-        <h2>Blog Developer</h2>
-      </Link>
-      <p>In quis excepteur proident cillum consequat irure quis qui magna.</p>
-      <SocialMedia />
-      <Courses />
+      <Navbar
+        sticky="top"
+        collapseOnSelect
+        expand="lg"
+        bg="transparent"
+        variant="light"
+      >
+        <Link to="/">
+          <Image src={logo} />
+        </Link>
+
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          className="justify-content-end"
+        >
+          <Nav>
+            <Link to="/" activeClassName="active">
+              Inicio
+            </Link>
+
+            <Link to="/blog" activeClassName="active">
+              Blog
+            </Link>
+
+            <Link to="/portafolio" activeClassName="active">
+              Portafolio
+            </Link>
+
+            <Link to="/productos" activeClassName="active">
+              Productos
+            </Link>
+
+            <Link to="/contacto" activeClassName="active">
+              Contacto
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   )
 }

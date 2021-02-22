@@ -8,7 +8,12 @@ export default function SocialMedia() {
   return (
     <div className="social-media">
       {map(socialData, (social, index) => (
-        <a href={social.link} target="_blank" rel="noopener noreferrer">
+        <a
+          key={social.id}
+          href={social.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon link name={social.name} className={social.name} />
         </a>
       ))}

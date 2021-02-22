@@ -1,6 +1,55 @@
 @import "../../sass/index.scss";
 
 .menu {
+  @media (min-width: $breakpoint-up-sm) {
+    margin-left: 8px;
+  }
+  img {
+    max-width: 85% !important;
+  }
+  vertical-align: middle;
+
+  button.navbar-toggler.collapsed {
+    background: #ffffff;
+    box-shadow: 3px 3px 6px #bdbdbd, -3px -3px 6px #ffffff;
+    &.active {
+      background: #ffffff;
+      box-shadow: inset 3px 3px 6px #bdbdbd, inset -3px -3px 6px #ffffff;
+    }
+    &:hover {
+      background: #ffffff;
+      box-shadow: inset 3px 3px 6px #bdbdbd, inset -3px -3px 6px #ffffff;
+    }
+  }
+  .navbar-nav {
+    a {
+      color: $font-dark !important;
+      text-decoration: none;
+      margin: 5px !important;
+      display: block;
+      min-width: 120px;
+      padding: 10px;
+      z-index: 3000;
+      border-radius: 5px;
+      font-size: 17px;
+      font-weight: 500;
+      background: #ffffff;
+      box-shadow: 4px 4px 8px #bdbdbd, -4px -4px 8px #ffffff;
+
+      &.active {
+        color: blue !important;
+        font-weight: bold;
+        background: #ffffff;
+        box-shadow: inset 4px 4px 8px #bdbdbd, inset -4px -4px 8px #ffffff;
+      }
+
+      &:hover {
+        background: #ffffff;
+        box-shadow: inset 4px 4px 8px #bdbdbd, inset -4px -4px 8px #ffffff;
+      }
+    }
+  }
+
   text-align: center;
   > a h2 {
     text-transform: uppercase;
