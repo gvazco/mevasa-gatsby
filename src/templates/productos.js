@@ -14,7 +14,7 @@ export default function Productos(props) {
     <BlogLayout>
       <Seo
         title="Productos de Mevasa Comercializadora"
-        description="Lorem Ipsuom dolor sit amet consecutur"
+        description="Catálogo de Productos y Accesorios"
         image={imageBlog}
       />
       <ProductList productos={productos} />
