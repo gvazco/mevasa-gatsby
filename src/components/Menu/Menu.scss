@@ -5,15 +5,17 @@
     margin-left: 8px;
   }
 
+  @media (max-width: $breakpoint-up-sm) {
+    nav.navbar {
+      align-items: center;
+      justify-content: center !important;
+    }
+  }
+
   img {
     max-width: 85% !important;
   }
   vertical-align: middle;
-
-  nav.navbar {
-    align-items: center;
-    justify-content: center;
-  }
 
   button.navbar-toggler.collapsed {
     background: #ffffff;
