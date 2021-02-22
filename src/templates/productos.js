@@ -31,6 +31,7 @@ export const query = graphql`
       sort: { fields: createdAt, order: DESC }
     ) {
       nodes {
+        id
         description
         image {
           publicURL
