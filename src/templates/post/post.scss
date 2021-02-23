@@ -12,7 +12,7 @@
   }
 
   .markdown-body {
-    padding: 10px 12%;
+    padding: 10px 20%;
 
     @media (max-width: $breakpoint-up-md) {
       padding: 10px 2%;
@@ -25,6 +25,7 @@
     p {
       font-size: 24px;
       font-family: "Open Sans", sans-serif;
+      text-align: start !important;
     }
 
     code {

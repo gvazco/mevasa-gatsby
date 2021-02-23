@@ -59,12 +59,15 @@ exports.createPages = async ({ actions, graphql }) => {
     }
   `)
 
-  const products = await graphql(`
+  const productos = await graphql(`
     query {
       allStrapiProducto {
         nodes {
           id
-          description
+          url
+          seo_title
+          seo_description
+          content
           image {
             publicURL
           }
@@ -78,7 +81,7 @@ exports.createPages = async ({ actions, graphql }) => {
   `)
 
   console.log(portafolios.data.allStrapiProyecto.nodes)
-  console.log(products.data.allStrapiProducto.nodes)
+  console.log(productos.data.allStrapiProducto.nodes)
 
   /* -------------------------------------------------------------------------- */
   /*                          Crear paginación dinámica                         */
@@ -102,7 +105,7 @@ exports.createPages = async ({ actions, graphql }) => {
 
   paginate({
     createPage, // The Gatsby `createPage` function
-    items: products.data.allStrapiProducto.nodes, // An array of objects
+    items: productos.data.allStrapiProducto.nodes, // An array of objects
     itemsPerPage: 9, // How many items you want per page
     pathPrefix: "/productos", // Creates pages like `/blog`, `/blog/2`, etc
     component: path.resolve(`src/templates/productos.js`), // Just like `createPage()`
@@ -128,6 +131,16 @@ exports.createPages = async ({ actions, graphql }) => {
       component: path.resolve(`src/templates/proyecto/proyecto.js`),
       context: {
         data: portafolio,
+      },
+    })
+  })
+
+  productos.data.allStrapiProducto.nodes.forEach(producto => {
+    createPage({
+      path: `/${producto.url}`,
+      component: path.resolve(`src/templates/producto/producto.js`),
+      context: {
+        data: producto,
       },
     })
   })

@@ -4,13 +4,13 @@ export default [
     name: "youtube",
     link: "https://youtube.com",
   },
+  // {
+  //   id: 2,
+  //   name: "twitter",
+  //   link: "https://twitter.com",
+  // },
   {
     id: 2,
-    name: "twitter",
-    link: "https://twitter.com",
-  },
-  {
-    id: 3,
     name: "facebook",
     link: "https://facebook.com",
   },
