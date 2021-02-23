@@ -19,7 +19,7 @@ exports.createPages = async ({ actions, graphql }) => {
 
   const posts = await graphql(`
     query {
-      allStrapiPost(sort: { fields: createdAt, order: DESC }) {
+      allStrapiPost(sort: { fields: fecha, order: DESC }) {
         nodes {
           id
           title
@@ -39,7 +39,7 @@ exports.createPages = async ({ actions, graphql }) => {
 
   const portafolios = await graphql(`
     query {
-      allStrapiProyecto(sort: { fields: createdAt, order: DESC }) {
+      allStrapiProyecto(sort: { fields: fecha, order: DESC }) {
         nodes {
           id
           title

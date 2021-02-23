@@ -15,8 +15,9 @@ export default function Proyecto(props) {
         description={proyecto.seo_description}
         image={proyecto.image.publicURL}
       />
-      <h1>{proyecto.title}</h1>
+
       <div className="markdown-body">
+        <h1>{proyecto.title}</h1>
         <div
           dangerouslySetInnerHTML={{
             __html: TransformOembedToIframe(proyecto.content),

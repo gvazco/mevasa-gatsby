@@ -28,7 +28,7 @@ export const query = graphql`
     allStrapiPost(
       skip: $skip
       limit: $limit
-      sort: { fields: createdAt, order: DESC }
+      sort: { fields: fecha, order: DESC }
     ) {
       nodes {
         id

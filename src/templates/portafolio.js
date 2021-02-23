@@ -27,7 +27,7 @@ export const query = graphql`
     allStrapiProyecto(
       skip: $skip
       limit: $limit
-      sort: { fields: createdAt, order: DESC }
+      sort: { fields: fecha, order: DESC }
     ) {
       nodes {
         id

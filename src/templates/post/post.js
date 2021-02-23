@@ -15,8 +15,9 @@ export default function post(props) {
         description={post.seo_description}
         image={post.miniature.publicURL}
       />
-      <h1>{post.title}</h1>
+
       <div className="markdown-body">
+        <h1>{post.title}</h1>
         <div
           dangerouslySetInnerHTML={{
             __html: TransformOembedToIframe(post.content),

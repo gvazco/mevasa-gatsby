@@ -27,7 +27,7 @@ export default function PostList(props) {
                 </Card.Meta>
                 <Card.Meta>
                   <Icon name="calendar alternate outline" />
-                  {moment(post.createdAt).format("LL")}
+                  {moment(post.fecha).format("LL")}
                 </Card.Meta>
               </Card.Content>
             </Card>
