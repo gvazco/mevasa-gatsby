@@ -22,7 +22,7 @@ export default function ProductList(props) {
               <Card.Content extra>
                 <Card.Meta>
                   <Icon name="certificate" />
-                  {producto.description}
+                  {producto.seo_description}
                 </Card.Meta>
                 <Card.Meta>
                   <Icon name="calendar alternate outline" />
