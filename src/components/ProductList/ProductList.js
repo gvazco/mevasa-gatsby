@@ -26,7 +26,7 @@ export default function ProductList(props) {
                 </Card.Meta>
                 <Card.Meta>
                   <Icon name="calendar alternate outline" />
-                  {moment(producto.published_at).format("LL")}
+                  {moment(producto.fecha).format("LL")}
                 </Card.Meta>
               </Card.Content>
             </Card>
