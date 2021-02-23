@@ -18,6 +18,7 @@ export default function Producto(props) {
 
       <div className="markdown-body">
         <h1>{producto.title}</h1>
+        <a href={producto.link}>Cotizar ahora</a>
         <div
           dangerouslySetInnerHTML={{
             __html: TransformOembedToIframe(producto.content),
