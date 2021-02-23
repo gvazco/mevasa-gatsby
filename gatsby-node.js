@@ -96,7 +96,7 @@ exports.createPages = async ({ actions, graphql }) => {
     createPage, // The Gatsby `createPage` function
     items: portafolios.data.allStrapiProyecto.nodes, // An array of objects
     itemsPerPage: 9, // How many items you want per page
-    pathPrefix: "/portafolio", // Creates pages like `/blog`, `/blog/2`, etc
+    pathPrefix: "/", // Creates pages like `/blog`, `/blog/2`, etc
     component: path.resolve(`src/templates/portafolio.js`), // Just like `createPage()`
   })
 

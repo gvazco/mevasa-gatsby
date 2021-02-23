@@ -27,15 +27,15 @@ export default function Menu() {
           className="justify-content-end"
         >
           <Nav>
-            <Link to="/" activeClassName="active">
+            {/* <Link to="/" activeClassName="active">
               Inicio
-            </Link>
+            </Link> */}
 
             <Link to="/blog" activeClassName="active">
               Blog
             </Link>
 
-            <Link to="/portafolio" activeClassName="active">
+            <Link to="/" activeClassName="active">
               Portafolio
             </Link>
 
