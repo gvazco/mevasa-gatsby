@@ -1,5 +1,50 @@
 .contacto {
   .markdown-body {
     padding: 10px 20%;
+    .section-heading {
+      text-align: center;
+      margin-bottom: 10rem;
+
+      & h1 {
+        font-family: BaronNeue;
+        text-transform: lowercase;
+        color: black;
+        position: relative;
+        margin-bottom: 2rem;
+      }
+
+      & h1::before,
+      h2::after {
+        content: "";
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.75);
+      }
+
+      & h1::before {
+        width: 10rem;
+        height: 3px;
+        border-radius: 0.8rem;
+      }
+      & h1::after {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 100%;
+        bottom: -3rem;
+      }
+
+      & h6 {
+        bottom: -1rem;
+        font-size: 2rem;
+        font-weight: 300;
+        font-family: OpenSans;
+      }
+
+      .has-margin-right {
+        margin-right: 5rem;
+      }
+    }
   }
 }

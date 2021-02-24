@@ -14,7 +14,7 @@ export default function PostList(props) {
     <Grid className="post-list">
       {map(posts, post => (
         <Grid.Column key={post.id} mobile={16} tablet={16} computer={5}>
-          <Link to={`/${post.url}`}>
+          <Link to={`/blog/${post.url}`}>
             <Card className="post-list__item">
               <Image src={post.miniature.publicURL} />
               <Card.Content>

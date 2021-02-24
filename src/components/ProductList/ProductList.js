@@ -13,7 +13,7 @@ export default function ProductList(props) {
     <Grid className="productos-list">
       {map(productos, producto => (
         <Grid.Column key={producto.id} mobile={16} tablet={16} computer={5}>
-          <Link to={`/${producto.url}`}>
+          <Link to={`/productos/${producto.url}`}>
             <Card className="productos-list__item">
               <Image src={producto.image.publicURL} />
               <Card.Content>

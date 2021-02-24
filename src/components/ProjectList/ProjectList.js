@@ -14,7 +14,7 @@ export default function ProjectList(props) {
     <Grid className="proyectos-list">
       {map(proyectos, proyecto => (
         <Grid.Column key={proyecto.id} mobile={16} tablet={16} computer={5}>
-          <Link to={`/${proyecto.url}`}>
+          <Link to={`/portafolio/${proyecto.url}`}>
             <Card className="proyectos-list__item">
               <Image src={proyecto.image.publicURL} />
               <Card.Content>

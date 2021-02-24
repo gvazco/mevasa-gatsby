@@ -99,7 +99,7 @@ exports.createPages = async ({ actions, graphql }) => {
     createPage, // The Gatsby `createPage` function
     items: portafolios.data.allStrapiProyecto.nodes, // An array of objects
     itemsPerPage: 9, // How many items you want per page
-    pathPrefix: "/", // Creates pages like `/blog`, `/blog/2`, etc
+    pathPrefix: "/portafolio", // Creates pages like `/blog`, `/blog/2`, etc
     component: path.resolve(`src/templates/portafolio.js`), // Just like `createPage()`
   })
 
@@ -117,7 +117,7 @@ exports.createPages = async ({ actions, graphql }) => {
 
   posts.data.allStrapiPost.nodes.forEach(post => {
     createPage({
-      path: `/${post.url}`,
+      path: `/blog/${post.url}`,
       component: path.resolve(`src/templates/post/post.js`),
       context: {
         data: post,
@@ -127,7 +127,7 @@ exports.createPages = async ({ actions, graphql }) => {
 
   portafolios.data.allStrapiProyecto.nodes.forEach(portafolio => {
     createPage({
-      path: `/${portafolio.url}`,
+      path: `/portafolio/${portafolio.url}`,
       component: path.resolve(`src/templates/proyecto/proyecto.js`),
       context: {
         data: portafolio,
@@ -137,7 +137,7 @@ exports.createPages = async ({ actions, graphql }) => {
 
   productos.data.allStrapiProducto.nodes.forEach(producto => {
     createPage({
-      path: `/${producto.url}`,
+      path: `/productos/${producto.url}`,
       component: path.resolve(`src/templates/producto/producto.js`),
       context: {
         data: producto,

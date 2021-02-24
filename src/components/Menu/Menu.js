@@ -31,15 +31,15 @@ export default function Menu() {
               Inicio
             </Link> */}
 
-            <Link to="/blog" activeClassName="active">
+            <Link to="/blog" partiallyActive activeClassName="active">
               Blog
             </Link>
 
-            <Link to="/" activeClassName="active">
+            <Link to="/portafolio" partiallyActive activeClassName="active">
               Portafolio
             </Link>
 
-            <Link to="/productos" activeClassName="active">
+            <Link to="/productos" partiallyActive activeClassName="active">
               Productos
             </Link>
 

@@ -1,4 +1,5 @@
 import React from "react"
+import Disqus from "gatsby-plugin-disqus"
 import BlogLayout from "../../layouts/BlogLayout"
 import TransformOembedToIframe from "../../utils/TransformOembedToIframe"
 import "./proyecto.scss"
@@ -22,6 +23,13 @@ export default function Proyecto(props) {
           dangerouslySetInnerHTML={{
             __html: TransformOembedToIframe(proyecto.content),
           }}
+        />
+        <br />
+        <br />
+        <Disqus
+          identifier={proyecto.id}
+          title={proyecto.title}
+          url={`/${proyecto.url}`}
         />
       </div>
     </BlogLayout>
