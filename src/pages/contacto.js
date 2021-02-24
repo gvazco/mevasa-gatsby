@@ -1,8 +1,6 @@
 import React from "react"
 import {
   Container,
-  Grid,
-  Row,
   Form,
   Input,
   Dropdown,
@@ -10,7 +8,9 @@ import {
   Button,
 } from "semantic-ui-react"
 import BlogLayout from "../layouts/BlogLayout"
-import WhatsAppForm from "../components/WhatsAppForm"
+// import WhatsAppForm from "../components/WhatsAppForm"
+import Seo from "../components/seo"
+import imageBlog from "../images/web-programacion.jpg"
 import "./contacto.scss"
 
 const options = [
@@ -35,6 +35,11 @@ const options = [
 export default function Contact() {
   return (
     <BlogLayout className="contacto">
+      <Seo
+        title="Blog de Techos y Mantenimientos | Mevasa"
+        description="Blog de Techos y Mantenimientos | Mevasa"
+        image={imageBlog}
+      />
       <Container fluid className="markdown-body">
         <div className="section-heading">
           <h1>Contacto</h1>
