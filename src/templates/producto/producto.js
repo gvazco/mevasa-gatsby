@@ -1,4 +1,5 @@
 import React from "react"
+import Disqus from "gatsby-plugin-disqus"
 import BlogLayout from "../../layouts/BlogLayout"
 import TransformOembedToIframe from "../../utils/TransformOembedToIframe"
 import "./producto.scss"
@@ -23,6 +24,13 @@ export default function Producto(props) {
           dangerouslySetInnerHTML={{
             __html: TransformOembedToIframe(producto.content),
           }}
+        />
+        <br />
+        <br />
+        <Disqus
+          identifier={producto.id}
+          title={producto.title}
+          url={`/${producto.url}`}
         />
       </div>
     </BlogLayout>
