@@ -14,19 +14,28 @@ import WhatsAppForm from "../components/WhatsAppForm"
 import "./contacto.scss"
 
 const options = [
-  { key: 1, text: "Instalacion de Materiales", value: 1 },
-  { key: 2, text: "Adquisición de Materiales", value: 2 },
-  { key: 3, text: "Oferta de productos o servicios", value: 3 },
-  { key: 3, text: "Dudas y Sugerencias", value: 4 },
+  {
+    key: 1,
+    text: "Instalacion de Materiales",
+    value: "Instalacion de Materiales",
+  },
+  {
+    key: 2,
+    text: "Adquisición de Materiales",
+    value: "Adquisición de Materiales",
+  },
+  {
+    key: 3,
+    text: "Oferta de productos o servicios",
+    value: "Oferta de productos o servicios",
+  },
+  { key: 3, text: "Dudas y Sugerencias", value: "Dudas y Sugerencias" },
 ]
 
 export default function Contact() {
   return (
     <BlogLayout className="contacto">
       <Container fluid className="markdown-body">
-<<<<<<< HEAD
-        <WhatsAppForm />
-=======
         <div className="section-heading">
           <h1>Contacto</h1>
           <h6>Trabajemos juntos ¡Estamos a tus ordenes!</h6>
@@ -66,7 +75,6 @@ export default function Contact() {
             Envíar
           </Button>
         </Form>
->>>>>>> a8733edd2d024693c33e20a86b935350a17f5293
       </Container>
     </BlogLayout>
   )
